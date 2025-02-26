@@ -21,6 +21,14 @@ namespace Calculadora
         {
 
         }
+        void TravarBotao()
+        {
+            if ((lblOper.Text == btDiv.Text && numOper2.Value == 0)
+                || lblOper.Text == "....")
+                btIgual.Enabled = false;
+            else
+                btIgual.Enabled = true;
+        }
 
         void AtribuirOperacao(string oper) 
         {
@@ -45,6 +53,7 @@ namespace Calculadora
         private void div_Click(object sender, EventArgs e)
         {
             AtribuirOperacao(btDiv.Text);
+            TravarBotao();
         }
 
         private void btIgual_Click(object sender, EventArgs e)
@@ -64,6 +73,11 @@ namespace Calculadora
 
             lblResultado.Text = resultado.ToString();
             
+        }
+
+        private void numOper2_ValueChanged(object sender, EventArgs e)
+        {
+            TravarBotao();
         }
     }
 }

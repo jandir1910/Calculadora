@@ -93,7 +93,7 @@
             // 
             this.btSoma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSoma.Location = new System.Drawing.Point(281, 119);
-            this.btSoma.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btSoma.Margin = new System.Windows.Forms.Padding(4);
             this.btSoma.Name = "btSoma";
             this.btSoma.Size = new System.Drawing.Size(29, 28);
             this.btSoma.TabIndex = 5;
@@ -105,7 +105,7 @@
             // 
             this.btSub.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSub.Location = new System.Drawing.Point(318, 119);
-            this.btSub.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btSub.Margin = new System.Windows.Forms.Padding(4);
             this.btSub.Name = "btSub";
             this.btSub.Size = new System.Drawing.Size(29, 28);
             this.btSub.TabIndex = 6;
@@ -117,7 +117,7 @@
             // 
             this.btMult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btMult.Location = new System.Drawing.Point(355, 119);
-            this.btMult.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btMult.Margin = new System.Windows.Forms.Padding(4);
             this.btMult.Name = "btMult";
             this.btMult.Size = new System.Drawing.Size(29, 28);
             this.btMult.TabIndex = 7;
@@ -129,7 +129,7 @@
             // 
             this.btDiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btDiv.Location = new System.Drawing.Point(392, 119);
-            this.btDiv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btDiv.Margin = new System.Windows.Forms.Padding(4);
             this.btDiv.Name = "btDiv";
             this.btDiv.Size = new System.Drawing.Size(29, 28);
             this.btDiv.TabIndex = 8;
@@ -142,7 +142,7 @@
             this.btIgual.Enabled = false;
             this.btIgual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btIgual.Location = new System.Drawing.Point(318, 226);
-            this.btIgual.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btIgual.Margin = new System.Windows.Forms.Padding(4);
             this.btIgual.Name = "btIgual";
             this.btIgual.Size = new System.Drawing.Size(103, 28);
             this.btIgual.TabIndex = 9;
@@ -154,7 +154,7 @@
             // 
             this.numOper1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numOper1.Location = new System.Drawing.Point(375, 62);
-            this.numOper1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numOper1.Margin = new System.Windows.Forms.Padding(4);
             this.numOper1.Maximum = new decimal(new int[] {
             1661992960,
             1808227885,
@@ -173,7 +173,7 @@
             // 
             this.numOper2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numOper2.Location = new System.Drawing.Point(375, 182);
-            this.numOper2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numOper2.Margin = new System.Windows.Forms.Padding(4);
             this.numOper2.Maximum = new decimal(new int[] {
             1661992960,
             1808227885,
@@ -187,6 +187,7 @@
             this.numOper2.Name = "numOper2";
             this.numOper2.Size = new System.Drawing.Size(72, 26);
             this.numOper2.TabIndex = 11;
+            this.numOper2.ValueChanged += new System.EventHandler(this.numOper2_ValueChanged);
             // 
             // Form1
             // 
@@ -205,7 +206,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Calculadora ";
             ((System.ComponentModel.ISupportInitialize)(this.numOper1)).EndInit();
